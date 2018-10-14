@@ -8,4 +8,5 @@ This project create by Students of HCMUTE
 4. https://www.tensorflow.org/
 5. https://viblo.asia/p/ung-dung-convolutional-neural-network-trong-bai-toan-phan-loai-anh-4dbZNg8ylYM
 6. https://app.pluralsight.com/library/courses/python-understanding-machine-learning
-# Plan :
+# Data :
+https://drive.google.com/drive/folders/1sLhEOjz9m1kqCs_wyXVZpAqw4OB06WEg?usp=sharing
