@@ -10,3 +10,18 @@ This project create by Students of HCMUTE
 6. https://app.pluralsight.com/library/courses/python-understanding-machine-learning
 # Data :
 https://drive.google.com/drive/folders/1sLhEOjz9m1kqCs_wyXVZpAqw4OB06WEg?usp=sharing
+
+# Workflow:
+
+1. Asking right question
+2. Preparing data
+  - Find the data 
+  - Import and clean data
+  - Explore data 
+  - Generate model data to Tidy data
+3. Selecting Algorithms
+  - Learning Algorithms
+  - Determined the Algorithms
+  - Appling for project
+4. Training model
+5. Testing
