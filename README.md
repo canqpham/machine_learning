@@ -8,20 +8,25 @@ This project create by Students of HCMUTE
 4. https://www.tensorflow.org/
 5. https://viblo.asia/p/ung-dung-convolutional-neural-network-trong-bai-toan-phan-loai-anh-4dbZNg8ylYM
 6. https://app.pluralsight.com/library/courses/python-understanding-machine-learning
+
 # Data :
 https://drive.google.com/drive/folders/1sLhEOjz9m1kqCs_wyXVZpAqw4OB06WEg?usp=sharing
 
 # Workflow:
 
-1. Asking right question
-2. Preparing data
+### 1. Asking right question
+
+### 2. Preparing data
   - Find the data 
   - Import and clean data
   - Explore data 
   - Generate model data to Tidy data
-3. Selecting Algorithms
+  
+### 3. Selecting Algorithms
   - Learning Algorithms
   - Determined the Algorithms
   - Appling for project
-4. Training model
-5. Testing
+  
+### 4. Training model
+
+### 5. Testing
