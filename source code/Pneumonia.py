@@ -66,7 +66,9 @@ model.add(Conv2D(filters=32, kernel_size=(3,3), activation="relu", padding="same
 # Dùng convolution layer (Conv2D) dùng để lấy feature từ image, trong đó:
 # filters: số filter của convolution layer
 # kernel_size: size Sliding window trượt trên image
-# relu: max(0,x) dùng trong các layer cnn để giảm chi phí tính toán
+# relu: max(0,x) dùng trong các layer cnn để giảm chi phí tính toán.  
+# Có tác dụng đưa các giá trị âm về thành 0. Để loại bỏ các giá trị âm 
+# không cần thiết mà có thể sẽ ảnh hưởng cho việc tính toán ở các layer sau đó.
 # padding="same": có sử dụng padding (="valid": không dùng)
 # input_shape: chính là kích thước của dữ liệu đầu vào.
 # Layer đầu tiên là layer input nên có input_shape
