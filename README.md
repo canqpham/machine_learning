@@ -15,9 +15,11 @@ https://drive.google.com/drive/folders/1sLhEOjz9m1kqCs_wyXVZpAqw4OB06WEg?usp=sha
 # Workflow:
 
 ### 1. Asking right question
-
+  - Reason to select project
+  - Strengths and Weaknesses
+  - Meaning
 ### 2. Preparing data
-  - Find the data 
+  - Find the data
   - Import and clean data
   - Explore data 
   - Generate model data to Tidy data
@@ -28,5 +30,10 @@ https://drive.google.com/drive/folders/1sLhEOjz9m1kqCs_wyXVZpAqw4OB06WEg?usp=sha
   - Appling for project
   
 ### 4. Training model
-
+  - Image processing
+  - Apply CNN algorithm and save model
+  - Try all the case with learning rate and scale of training/testing image
 ### 5. Testing
+  - Testing all model and evaluate
+  - Select the best model
+  - Report
