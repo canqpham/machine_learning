@@ -6,7 +6,7 @@ import os # Dùng để thao tác với file và folder
 
 from tensorflow.contrib.distributions.python.ops.bijectors import inline
 
-print(os.listdir("../input"))
+print(os.listdir("../../data"))
 
 #import thư viện
 import keras # Dùng để xây dựng nên model vì nó hỗ trợ nhiều cho CNN
@@ -122,7 +122,7 @@ model.add(Dense(2, activation="softmax"))
 # activation: softmax dùng trong multi classifier
 
 # learning rate = 0,0001
-model.compile(Adam(lr=0.0001),loss="categorical_crossentropy", metrics=["accuracy"])
+model.compile(Adam(lr=0.001),loss="categorical_crossentropy", metrics=["accuracy"])
 ###
 # Sau khi build model xong thì compile nó có tác dụng biên tập lại toàn bộ model của chúng ta đã build. 
 # Ở đây chúng ta có thể chọn các tham số để training model như : 
@@ -135,17 +135,17 @@ model.compile(Adam(lr=0.0001),loss="categorical_crossentropy", metrics=["accurac
 # để huấn luyện dữ liệu hình ảnh được tăng cường bằng cách sử dụng ImageDataGenerator.###
 gen = ImageDataGenerator()
 # import data và xám hóa
-train_batches = gen.flow_from_directory("../input/chest_xray/chest_xray/train",model.input_shape[1:3],color_mode="grayscale",shuffle=True,seed=1,
+train_batches = gen.flow_from_directory("../../data/chest_xray/train",model.input_shape[1:3],color_mode="grayscale",shuffle=True,seed=1,
                                         batch_size=16)
-valid_batches = gen.flow_from_directory("../input/chest_xray/chest_xray/val", model.input_shape[1:3],color_mode="grayscale", shuffle=True,seed=1,
+valid_batches = gen.flow_from_directory("../../data/chest_xray/val", model.input_shape[1:3],color_mode="grayscale", shuffle=True,seed=1,
                                         batch_size=16)
-test_batches = gen.flow_from_directory("../input/chest_xray/chest_xray/test", model.input_shape[1:3], shuffle=False,
+test_batches = gen.flow_from_directory("../../data/chest_xray/test", model.input_shape[1:3], shuffle=False,
                                        color_mode="grayscale", batch_size=8)
 # training dữ liệu ảnh
 model.fit_generator(train_batches,validation_data=valid_batches,epochs=3)
 
 # Save the model
-model.save('D:\Result\lungdetection-rate-0001.h5')
+model.save('D:\Result\lungdetection-rate-001.h5')
 
 # learning rate = 0,0001 cho độ chính xác cao hơn
 # model.compile(Adam(lr=0.0001),loss="categorical_crossentropy", metrics=["accuracy"])

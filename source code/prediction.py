@@ -12,7 +12,7 @@ from PIL import Image
 import pandas as pd
 from keras.preprocessing.image import ImageDataGenerator
 from sklearn.metrics import roc_auc_score,roc_curve,accuracy_score,recall_score
-model = load_model('D:\Result\lungdetection-rate-0001.h5')
+model = load_model('D:\Result\lungdetection-rate-001.h5')
 
 """
 img = Image.open("F:/NAM4/HK1/IM-0005-0001.jpeg").convert('L')
@@ -34,7 +34,7 @@ print("Predict label: \n", np.argmax(y_pred[0]))
 """
 gen = ImageDataGenerator()
 
-test_batches = gen.flow_from_directory("../input/chest_xray/chest_xray/test", model.input_shape[1:3], shuffle=False,
+test_batches = gen.flow_from_directory("../../data/chest_xray/test", model.input_shape[1:3], shuffle=False,
                                        color_mode="grayscale", batch_size=8)
 
 p = model.predict_generator(test_batches, verbose=True)
